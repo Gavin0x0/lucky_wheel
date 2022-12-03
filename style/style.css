@@ -1,0 +1,133 @@
+#_1 {
+  fill: #14c187;
+}
+
+#_2 {
+  fill: #1592e8;
+}
+
+#_3 {
+  fill: #14c187;
+}
+
+#_4 {
+  fill: #ffb700;
+}
+
+#_5 {
+  fill: #14c187;
+}
+
+#_6 {
+  fill: #1592e8;
+}
+
+#_7 {
+  fill: #a32dda;
+}
+
+#_8 {
+  fill: #1592e8;
+}
+
+#_9 {
+  fill: #14c187;
+}
+
+#_10 {
+  fill: #ffb700;
+}
+
+#_11 {
+  fill: #14c187;
+}
+
+#_12 {
+  fill: #a32dda;
+}
+
+.frame,
+.sticks {
+  fill: #fff;
+}
+
+.winIndicator {
+  fill: #fff;
+}
+
+.wheelMiddle {
+  fill: #fff;
+}
+
+body {
+  text-align: center;
+  margin: 0;
+  background-color: rgb(255, 228, 121);
+}
+
+.luckywheel {
+  width: 50vw;
+  height: 50vh;
+}
+
+.btn,
+.btn:visited {
+  font-weight: 800;
+  margin: 10px;
+  height: 40px;
+  width: 140px;
+  box-shadow: 4px 4px 20px 0 rgb(234, 197, 47);
+  border-radius: 0;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  text-decoration: none;
+  box-shadow: 4px 4px 5px 0 rgb(179, 148, 26);
+}
+
+.row-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 5vw;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheel-container {
+  padding-top: 50px;
+}
+
+.bg-image-conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bg-image {
+  width: 50vh;
+  height: 50vh;
+}
+
+#result {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: SmileySans-Oblique;
+  color: rgb(14, 14, 17);
+}
+
+/*# sourceMappingURL=style.css.map */

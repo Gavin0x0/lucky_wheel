@@ -1,0 +1,116 @@
+// Setup wheel colors
+
+$frameColor: #fff;
+$winIndicatorColor: #fff;
+$middleColor: #fff;
+$Basic: #14c187;
+$Common: #ffffff;
+$Rare: #1592e8;
+$Epic: #a32dda;
+$Legendary: #ffb700;
+$colors: $Basic //sector 1 color 0-30
+  $Rare //sector 2 color 30-60
+  $Basic //sector 3 color 60-90
+  $Legendary //sector 4 color 90-120
+  $Basic //sector 5 color 120-150
+  $Rare //sector 6 color 150-180
+  $Epic //sector 7 color 180-210
+  $Rare //sector 8 color 210-240
+  $Basic //sector 9 color 240-270
+  $Legendary //sector 10 color 270-300
+  $Basic //sector 11 color 300-330
+  $Epic; //sector 12 color 330-360
+
+@mixin setColor($n) {
+  fill: nth($colors, $n);
+}
+
+@for $i from 1 through 12 {
+  #_#{$i} {
+    @include setColor($i);
+  }
+}
+
+.frame,
+.sticks {
+  fill: $frameColor;
+}
+
+.winIndicator {
+  fill: $winIndicatorColor;
+}
+
+.wheelMiddle {
+  fill: $middleColor;
+}
+
+// Body
+
+body {
+  text-align: center;
+  margin: 0;
+  background-color: rgb(255, 228, 121);
+}
+
+.luckywheel {
+  width: 50vw;
+  height: 50vh;
+}
+
+// Buttons
+
+.btn,
+.btn:visited {
+  font-weight: 800;
+  margin: 10px;
+  height: 40px;
+  width: 140px;
+  box-shadow: 4px 4px 20px 0 rgb(234, 197, 47);
+  border-radius: 0;
+  border: 2px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background-color: #000;
+  border: none;
+  text-decoration: none;
+  box-shadow: 4px 4px 5px 0 rgb(179, 148, 26);
+}
+
+.row-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0 5vw;
+}
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wheel-container {
+  padding-top: 50px;
+}
+.bg-image-conatiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bg-image {
+  width: 50vh;
+  height: 50vh;
+}
+
+#result {
+  font-size: 60px;
+  font-weight: 800;
+  font-family: SmileySans-Oblique;
+  color: rgb(14, 14, 17);
+}
