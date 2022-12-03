@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   // 礼物数量：[特等奖，一等奖，二等奖，三等奖，参与奖]
-  var giftNums = [200, 6, 8, 20, 50];
+  var giftNums = [2, 6, 8, 20, 50];
   // 区域设置
   var sectorsList = [
     { startA: 0, endA: 15, color: "#B2A4FF", text: "特等奖🌟", level: 0 },
